@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Doley</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66f4dbd1d6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="resources/Vector 3.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#porfolio">Portfolio</a></li>
+                    <li><a href="#contact">Hire Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+    </div>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="resources/ND PP-modified.png" alt="Nelson Doley Proflie Picture">
+        </div>
+    </section>
+
+    <section id="profile_details">
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm Nelson</p>
+            <p class="section_text_p2">UI/UX <br>Designer</p>
+            <p class="section_text_p3">Passionate about intuitive design, I craft user-friendly
+                <br>digital experiences that bring your vision to life with
+                <br>creativity and precision.
+            </p>
+        </div>
+    </section>
+    <!-- -----------about---------- -->
+    <section id="about">
+        <div class="about_text">
+            <h1 class="About_h1">About</h1>
+            <p class="about_text_p1">My name is Nelson, a graduate from Tezpur University with a background
+                in Electronics and <br>Communication Engineering, now passionately dedicated to UI/UX design.
+                I specialize in <br>crafting seamless, user-friendly digital experiences that captivate and
+                engage. By blending <br>creative with technical expertise, I prioritize function and usaability
+                to deliver impactful,<br> intuitive enabling me to create compelling visuals aligned with branding
+                and marketing goals. <br> I'm open to collaborations, freelance projects, and new opportunities to
+                innovate and make a <br>meaningful impact through design.
+            </p>
+        </div>
+    </section>
+
+    <section class="about_below">
+        <div class="about_below_text">
+            <p class="about_below_text_p1"> What I actually <b>DO?</b></p>
+        </div>
+    </section>
+
+    <section id="about_img">
+        <div class="about_pic_container1">
+            <img src="resources/Group 9063.png" width="400px" height="200px" alt="What I actually do ? Picture 1">
+        </div>
+        <div class="about_pic_container2">
+            <img src="resources/Group 9064.png" width="400px" height="220px" alt="What I actually do ? Picture 2">
+        </div>
+        <div class="about_pic_container3">
+            <img src="resources/3569183 1.png" width="400px" height="200px" alt="What I actually do ? Picture 3">
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="skills_text">
+            <p class="skills_text_2">Software Knowledge</p>
+        </div>
+
+        <div class="skill_pic">
+            <ul>
+                <li class="skill_pic_1">
+                    <img src="resources/figma_5968705 2.png" width="110px" height="110px"
+                        alt="What I actually do ? Picture 1">
+                </li>
+                <li class="skill_pic_2">
+                    <img src="resources/Vector.png" width="110px" height="110px" alt="What I actually do ? Picture 2">
+                </li>
+                <li class="skill_pic_3">
+                    <img src="resources/illustrator 2.png" width="110px" height="110px"
+                        alt="What I actually do ? Picture 3">
+                </li>
+                <li class="skill_pic_4">
+                    <img src="resources/indesign 2.png" width="110px" height="110px"
+                        alt="What I actually do ? Picture 3">
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- ----------portfolio------------ -->
+    <div id="porfolio">
+        <div class="p-container">
+            <div class="row">
+                <div class="portfolio-col-2">
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Eskills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Eskills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Graphics Design</span>3D Design</li>
+                            <li><span>Figma</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Oct 2024 - Nov 2024</span><br>UI/UX Designer at Skyllx.com</li>
+                            <li><span>Jul 2024 - Nov 2024</span><br>UI/UX Designer at House of Artists</li>
+                            <li><span>Apr 2024 - May 2024</span><br>UI Designer Intern at Instamedz</li>
+                            <li><span>Apr 2024 - May 2024</span><br>UI/UX Designer Intern at CognoRise InfoTech</li>
+                            <li><span>Jan 2023 - Dec 2023</span><br>User Experience Designer at VrixaaLabs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>Tezpur University - B.Tech</li>
+                            <li><span>2018 - 2020</span><br>Kiran Academy - 12th</li>
+                            <li><span>2005 - 2018</span><br>Saint Francis De Sale - 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="contact_header">
+                <p class="contact_header_1">Let's Work Together !</p>
+                <p class="contact_header_2">Reach out today, and together we can <br>turn your vision into reality.</p>
+            </div>
+            <div class="row">
+                <div class="contact-left">
+                    <img src="resources/Nelson logo.svg" class="logo">
+                    <p>Passionate UI/UX designer with 2 years experince in <br>crafting
+                        exceptional websites,apps. and graphics that <br>blend creativity
+                        with functionality.
+                    </p>
+                    <p><i class="fas fa-paper-plane"></i> nelsondoley43@example.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 6361510730</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Dhemaji, Assam</p>
+                    <div class="social-icons">
+                        <a href="https://www.behance.net/nelsondoley1"><i class="fa-brands fa-behance"></i></a>
+                        <a href="https://www.instagram.com/asethetic_arc/profilecard/?igsh=MnIyMXc2bmZzMDNq"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nelson-a65008235"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="resources/Nelson_resume.pdf .pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" name="Subject" placeholder="Your Subject" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------Script-------------- -->
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxsTGfzuJmG5LikZkxhO6GY2snIBQmtjeUaKvc9VdwXUDgaeT_lQ1vsS_PEpsCWpnlXjg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 2000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>

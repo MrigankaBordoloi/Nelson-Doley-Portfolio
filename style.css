@@ -1,0 +1,427 @@
+@font-face {
+    font-family: Mervale;
+    src: url(../fonts/Mervale);
+}
+
+@font-face {
+    font-family: PLayfair;
+    src: url(../fonts/PLayfair);
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(../fonts/Manrope);
+}
+
+@font-face {
+    font-family: Monument;
+    src: url(../fonts/Monument);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-top: 50px;
+    background: #d6eaf8;
+    color: #020510;
+}
+
+/* HEADER SECTION */
+
+#header {
+    width: 100%;
+    height: 20vh;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: #020510;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #21295c;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* PROFILE SECTION */
+
+#profile{
+    display: flex;
+    justify-content: center;
+}
+
+.section__pic-container{
+    display: flex;
+    height: 400px;
+    width: 400px;
+}
+
+#profile_details{
+    display: flex;
+    justify-content: center;
+}
+
+.section_text_p1{
+    text-align: center;
+    font-size: 64px;
+    font-family: Mervale, cursive;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section_text_p2{
+    text-align: center;
+    font-size: 160px;
+    font-family: Playfair;
+    font-weight: bolder;
+}
+
+.section_text_p3{
+    text-align: center;
+    font-size: 30px;
+    font-family: Manrope;
+    margin-top: 40px;
+}
+
+/* ABOUT SECTION */
+
+#about{
+    display: flex;
+    justify-content: center;
+    margin: 0 230px;
+    padding: 100px;
+}
+
+.About_h1{
+    font-size: 30px;
+    text-align: left;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+.about_text{
+    font-size: 22px;
+    font-family: Manrope;
+}
+
+#about_below{
+    display: flex;
+    justify-content: center;
+}
+
+.about_below_text_p1{
+    text-align: center;
+    font-size: 25px;
+    font-family: Manrope;
+    margin-top: 40px;
+}
+
+#about_img{
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.about_pic_container1,.about_pic_container2,.about_pic_container3{
+    margin: 0 50px;
+    background-color: #f3f5ff;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* SKILLS SECTION */
+
+#skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skills_text,.skill_pic{
+    background: #13172f;
+    justify-items: center;
+    padding-top: 40px;
+}
+
+.skills_text_2{
+    text-align: center;
+    color: #f3f5ff;
+    font-size: 30px;
+    font-family: Manrope;
+    margin-top: 40px;
+}
+
+.skill_pic_1,.skill_pic_2,.skill_pic_3,.skill_pic_4{
+    display: inline-block;
+    padding: 50px;
+    background-color: #f3f5ff;
+    flex-wrap: wrap;
+    margin: 40px 40px;
+    border-radius: 30px;
+}
+
+/* ---------portfolio--------- */
+
+#portfolio{
+    padding: 80px 0;
+    color: #ababab;
+    width: 100%;
+}
+
+.p-container{
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    font-family: Monument;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+    font-size: 20px;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* ---------contact-------- */
+
+#contact{
+    background: #13172f;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.contact_header_1{
+    color: #f3f5ff;
+    font-size: 40px;
+    text-align: center;
+    font-family: Monument;
+}
+
+.contact_header_2{
+    color: #f3f5ff;
+    font-family: Manrope;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-left{
+    flex-basis: 35%;
+    color: #f3f5ff;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn{
+    display: block;
+    width: fit-content;
+    margin-top: 20px;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+
+.btn.btn3{
+    display: inline-block;
+    background: transparent;
+    font-size: 20px;
+    padding: 14px 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    color: #f3f5ff;
+    border: 1px solid #ff004f;
+    transition: background 0.5s;
+}
+.btn.btn3:hover{
+    background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #f3f5ff;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* -----------------css for small screens--------- */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #13172f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    
+    .section_text,.about_text{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: 20px;
+    display: block;
+    font-weight: bold;
+    font-family: Monument;
+}
